@@ -1,10 +1,13 @@
 body {
     background-color: #404749;
 }
-
-#aboutme {
-	cursor: pointer;
+h4 {
+	font-family:arial;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	color: #A9B0B3;
 }
+
 .thumbnail { 
 	background-color: #030C22;
 	padding: 4px;
@@ -19,18 +22,14 @@ body {
 }
 .thumbnails { 
 	text-align:center; 
-			
+	padding: 0px;
 }
 .thumbnails > li { 
 	display: inline-block;
 	float: none; 
 }
-
-h4 {
-	font-family:arial;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	color: #A9B0B3;
+.link {
+	cursor: pointer;
 }
 
 .line{ 

@@ -1,0 +1,43 @@
+body {
+    background-color: #404749;
+}
+
+#aboutme {
+	cursor: pointer;
+}
+.thumbnail { 
+	background-color: #030C22;
+	padding: 4px;
+	border: #fff;
+
+	margin: 20px;
+		margin-top: 40px;
+	border: 10px;
+	
+	
+			
+}
+.thumbnails { 
+	text-align:center; 
+			
+}
+.thumbnails > li { 
+	display: inline-block;
+	float: none; 
+}
+
+h4 {
+	font-family:arial;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	color: #A9B0B3;
+}
+
+.line{ 
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#20293F), to(#404749));
+}

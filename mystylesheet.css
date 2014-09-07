@@ -7,6 +7,14 @@ h4 {
 	margin-bottom: 3px;
 	color: #A9B0B3;
 }
+h1 {
+	text-align: center;
+	font-family:arial;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	color: white;
+}
+
 
 .thumbnail { 
 	background-color: #030C22;
@@ -16,10 +24,13 @@ h4 {
 	margin: 20px;
 		margin-top: 40px;
 	border: 10px;
-	
-	
-			
 }
+
+.thumbnail:active {
+  transition-duration: 50ms;
+  background: white;   
+}
+
 .thumbnails { 
 	text-align:center; 
 	padding: 0px;
@@ -28,8 +39,23 @@ h4 {
 	display: inline-block;
 	float: none; 
 }
-.link {
+.aboutme {
 	cursor: pointer;
+}
+.aboutme.white > h4{
+	color: white;
+}
+.resume {
+	cursor: pointer;
+}
+.resume.white > h4{
+	color: white;
+}
+.contact {
+	cursor: pointer;
+}
+.contact.white > h4{
+	color: white;
 }
 
 .line{ 

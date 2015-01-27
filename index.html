@@ -7,106 +7,13 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		
 		<link rel="stylesheet" type="text/css" href="mystylesheet.css">
-		
-		<script>
-			$(document).ready(function(){
-			$(".aboutmepg").hide();
-			$(".resumepg").hide();
-			$(".contactpg").hide();
-			$(".contactpg").toggle();
-			$(".contact").toggleClass('white');
-				$(".aboutme").click(function(){
-					$(".aboutme").toggleClass('white');
-					$(".resume").removeClass('white');
-					$(".contact").removeClass('white');
-					$(".aboutmepg").toggle();
-					$(".resumepg").hide();
-					$(".contactpg").hide();
-				});
-				$(".resume").click(function(){
-					$(".resume").toggleClass('white');
-					$(".aboutme").removeClass('white');
-					$(".contact").removeClass('white');
-					$(".resumepg").toggle();
-					$(".aboutmepg").hide();
-					$(".contactpg").hide();
-				});
-				$(".contact").click(function(){
-					$(".contact").toggleClass('white');
-					$(".aboutme").removeClass('white');
-					$(".resume").removeClass('white');
-					$(".contactpg").toggle();
-					$(".aboutmepg").hide();
-					$(".resumepg").hide();
-				});
-			});
-		</script>
-		
+
+			<canvas id="canvas" ></canvas>
+
 	</head>
 	<body>
-
-	<ul class="thumbnails">
-		<li class="span5">
-			<div class="thumbnail">
-				<div class="aboutme">
-					<img height="100px" width="100px" src="./thumbnails/aboutme.png" alt="Circular Image">
-					<h4>About me</h4>
-				</div>
-			</div>
-		</li>
-		<li class="span5">
-			<div class="thumbnail">
-				<div class="resume">
-					<img height="100px" width="100px" src="./thumbnails/resume.png"alt="Circular Image">
-					<h4>Resume</h4>
-				</div>
-			</div>
-		</li>
-		<li class="span5">
-			<div class="thumbnail">
-				<div class="contact">
-					<img height="100px" width="100px" src="./thumbnails/contact.png"alt="Circular Image">
-					<h4>Contact</h4>
-				</div>
-			</div>
-		</li>
-	</ul>
-	<div>
-		<span class="line"></span>
-	</div>
-	<div class="aboutmepg">
-		<h1>About me</h1>
-	</div>
-	<div class="resumepg">
-		<div class="link">
-		<a href="./MasonEverett.pdf" style="font-size: 35px; text-decoration:underline; color: #5C4B51;">Resume External Link</a>
-		</div>
-		<div class="pdf" style="padding: 30px;">
-			<iframe src="http://docs.google.com/gview?url=mdawg.me/MasonEverett.pdf&embedded=true" style="width:900px; height:1180px;" frameborder="0"></iframe>
-		</div>
-	</div>
-	<div class="contactpg">
-		<h1>me@purdue.edu</h1>
-		<ul class="thumbnails">
-		<li class="span5">
-			<div class="thumbnailv2">
-				<a href="https://facebook.com/mas.everett"><img src="./thumbnails/fb.png" border="0" height="200x" width="200px"></a>
-			</div>
-		</li>
-		<li class="span5">
-			<div class="thumbnailv2">
-				<a href="https://github.com/everetm"><img src="./thumbnails/git.png" border="0" height="200px" width="200px"></a>
-			</div>
-		</li>
-		<li class="span5">
-			<div class="thumbnailv2">
-				<a href="https://www.linkedin.com/in/everetm"><img src="./thumbnails/linkedin.png" border="0" height="200px" width="200px"></a>
-			</div>
-		</li>
-	</ul>
-	</div>
-	<canvas id="canvas"></canvas>
-	<canvas style="display:none" id="canvas"></canvas>
+	
+	
 	<script>
 	window.onload = function(){
 		//canvas init
@@ -194,6 +101,100 @@
 		setInterval(draw, 33);
 	}
 	</script>
+		<script>
+			$(document).ready(function(){
+			$(".aboutmepg").hide();
+			$(".resumepg").hide();
+			$(".contactpg").hide();
+			$(".contactpg").toggle();
+			$(".contact").toggleClass('white');
+				$(".aboutme").click(function(){
+					$(".aboutme").toggleClass('white');
+					$(".resume").removeClass('white');
+					$(".contact").removeClass('white');
+					$(".aboutmepg").toggle();
+					$(".resumepg").hide();
+					$(".contactpg").hide();
+				});
+				$(".resume").click(function(){
+					$(".resume").toggleClass('white');
+					$(".aboutme").removeClass('white');
+					$(".contact").removeClass('white');
+					$(".resumepg").toggle();
+					$(".aboutmepg").hide();
+					$(".contactpg").hide();
+				});
+				$(".contact").click(function(){
+					$(".contact").toggleClass('white');
+					$(".aboutme").removeClass('white');
+					$(".resume").removeClass('white');
+					$(".contactpg").toggle();
+					$(".aboutmepg").hide();
+					$(".resumepg").hide();
+				});
+			});
+		</script>
+
+	<ul class="thumbnails">
+		<li class="span5">
+			<div class="thumbnail">
+				<div class="aboutme">
+					<img height="100px" width="100px" src="./thumbnails/aboutme.png" alt="Circular Image">
+					<h4>About me</h4>
+				</div>
+			</div>
+		</li>
+		<li class="span5">
+			<div class="thumbnail">
+				<div class="resume">
+					<img height="100px" width="100px" src="./thumbnails/resume.png"alt="Circular Image">
+					<h4>Resume</h4>
+				</div>
+			</div>
+		</li>
+		<li class="span5">
+			<div class="thumbnail">
+				<div class="contact">
+					<img height="100px" width="100px" src="./thumbnails/contact.png"alt="Circular Image">
+					<h4>Contact</h4>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div>
+		<span class="line"></span>
+	</div>
+	<div class="aboutmepg">
+		<h1>About me</h1>
+	</div>
+	<div class="resumepg">
+		<div class="link">
+		<a href="./MasonEverett.pdf" style="font-size: 35px; text-decoration:underline; color: #5C4B51;">Resume External Link</a>
+		</div>
+		<div class="pdf" style="padding: 30px;">
+			<iframe src="http://docs.google.com/gview?url=mdawg.me/MasonEverett.pdf&embedded=true" style="width:900px; height:1180px;" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="contactpg">
+		<h1>me@purdue.edu</h1>
+		<ul class="thumbnails">
+		<li class="span5">
+			<div class="thumbnailv2">
+				<a href="https://facebook.com/mas.everett"><img src="./thumbnails/fb.png" border="0" height="200x" width="200px"></a>
+			</div>
+		</li>
+		<li class="span5">
+			<div class="thumbnailv2">
+				<a href="https://github.com/everetm"><img src="./thumbnails/git.png" border="0" height="200px" width="200px"></a>
+			</div>
+		</li>
+		<li class="span5">
+			<div class="thumbnailv2">
+				<a href="https://www.linkedin.com/in/everetm"><img src="./thumbnails/linkedin.png" border="0" height="200px" width="200px"></a>
+			</div>
+		</li>
+	</ul>
+	</div>
 
 	</body>
 </html>

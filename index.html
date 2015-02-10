@@ -5,7 +5,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		
+
 		<link rel="stylesheet" type="text/css" href="mystylesheet.css">
 
 			<canvas id="canvas" ></canvas>
@@ -28,8 +28,8 @@
 <meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
-	
-	
+
+
 	<script>
 	window.onload = function(){
 		//canvas init
@@ -40,7 +40,7 @@
 		var H = window.innerHeight;
 		canvas.width = W;
 		canvas.height = H;
-	
+
 		//snowflake particles
 		var mp = 25; //max particles
 		var particles = [];
@@ -53,12 +53,12 @@
 				d: Math.random()*mp //density
 			})
 		}
-	
+
 		//Lets draw the flakes
 		function draw()
 		{
 			ctx.clearRect(0, 0, W, H);
-		
+
 			ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
 			ctx.beginPath();
 			for(var i = 0; i < mp; i++)
@@ -70,7 +70,7 @@
 			ctx.fill();
 			update();
 		}
-	
+
 		//Function to move the snowflakes
 		//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
 		var angle = 0;
@@ -86,7 +86,7 @@
 				//Lets make it more random by adding in the radius
 				p.y += Math.cos(angle+p.d) + 1 + p.r/2;
 				p.x += Math.sin(angle) * 2;
-			
+
 				//Sending flakes back from the top when it exits
 				//Lets make it a bit more organic and let flakes enter from the left and right also.
 				if(p.x > W+5 || p.x < -5 || p.y > H)
@@ -112,7 +112,7 @@
 				}
 			}
 		}
-	
+
 		//animation loop
 		setInterval(draw, 33);
 	}
@@ -156,7 +156,7 @@
 			<div class="thumbnail">
 				<div class="aboutme">
 					<img height="100px" width="100px" src="./thumbnails/aboutme.png" alt="Circular Image">
-					<h4>About me</h4>
+					<h4>About Me</h4>
 				</div>
 			</div>
 		</li>
@@ -181,7 +181,7 @@
 		<span class="line"></span>
 	</div>
 	<div class="aboutmepg">
-		<h1>About me</h1>
+		<h1>I like cats.</h1>
 	</div>
 	<div class="resumepg">
 		<div class="link">
